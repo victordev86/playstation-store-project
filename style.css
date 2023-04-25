@@ -21,9 +21,11 @@
     background-color: white;
     border: none;
     height: 80vh;
+    max-height: 700px;
     width: 950px;
     border-radius: 30px;
     box-shadow: 0px 0px 6px dimgrey;
+    position: relative;
 }
 
 header {
@@ -52,8 +54,9 @@ header {
 }
 
 main {
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
+    position: relative;
 }
 
 .left-section {
@@ -65,7 +68,7 @@ main {
     position: absolute;
     height: 220px;
     width: 10px;
-    margin: 8px 0 0 20px;
+    margin: 35px 0 0 20px;
     border-radius: 5px;
     background: linear-gradient(90deg, rgba(255, 125, 174, 1) 0%, rgba(241, 42, 42, 1) 100%);
 }
@@ -73,7 +76,7 @@ main {
 h1 {
     font-size: 57px;
     line-height: 60px;
-
+    margin: 30px 0;
 }
 
 h2 {
@@ -107,12 +110,13 @@ h4 {
 
 .right-section {
     width: auto;
+    position: relative;
 }
 
 .controller {
     width: 400px;
-    position: fixed;
-    top: 260px;
+    position: absolute;
+    top: 40px;
     margin-left: 20px;
 }
 
@@ -146,8 +150,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin-top: 100px;
+    margin-top: 65px;
 }
 
 .fb-logo {
@@ -168,14 +171,92 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
 
-    .menu{
+    .white-box {
+        height: 90%;
+        width: 95%;
+        max-height: 90%;
+    }
+
+    .menu {
         display: none;
     }
 
     .menu-icon {
+        display: inline-block;
+        margin-left: 265px;
+    }
+
+    main {
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 45px;
+        width: auto;
+        margin: 15px 0;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    h4 {
+        font-size: 25px;
+        margin: 0 0 20px;
+        opacity: 0.7;
+    }
+
+    .comprar-butto {
+        padding: 10px 30px;
+    }
+
+    .text-column {
+        display: none;
+    }
+
+    .left-section {
+        width: 100%;
+        position: relative;
+        top: 380px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .right-section {
+        width: 100%;
+        position: absolute;
+        margin-top: 170px;
+    }
+
+    .controller {
+        width: 350px;
         display: block;
     }
 
+    .controller-box {
+        margin: 0 auto;
+        width: 90%;
+        height: 350px;
+        border-radius: 22px;
+    }
+
+    .add-button {
+        display: block;
+        position: absolute;
+        left: 177px;
+        bottom: 32px;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    footer {
+        position: relative;
+        top: 380px;
+    }
 }
