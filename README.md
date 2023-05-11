@@ -6,6 +6,8 @@
   This is a mobile responsive project using HTML and CSS.
 </h2>
 
+<br>
+
 <p align="center">
   <img src="https://github.com/victordev86/playstation-store-project/blob/master/img/Playstation%20Store%20-%20desktop.png?raw=true" width="500px"> <img src="https://github.com/victordev86/playstation-store-project/blob/master/img/Playstation%20Store%20-%20mobile.png?raw=true" width="170px">
 </p>
