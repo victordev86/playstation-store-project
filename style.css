@@ -173,6 +173,8 @@ footer {
 
 @media screen and (max-width: 950px) {
 
+  
+
     .white-box {
         height: 90%;
         width: 95%;
@@ -190,12 +192,13 @@ footer {
 
     main {
         align-items: center;
+        margin-top: 30px;
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 40px;
         width: auto;
-        margin: 15px 0;
+        margin: 10px 0;
     }
 
     h2 {
@@ -207,7 +210,7 @@ footer {
     }
 
     h4 {
-        font-size: 25px;
+        font-size: 22px;
         margin: 0 0 20px;
         opacity: 0.7;
     }
@@ -223,7 +226,7 @@ footer {
     .left-section {
         width: 100%;
         position: relative;
-        top: 380px;
+        top: 270px;
         margin-left: 0;
         text-align: center;
     }
@@ -231,18 +234,19 @@ footer {
     .right-section {
         width: 100%;
         position: absolute;
-        margin-top: 170px;
+        margin-top: 100px;
     }
 
     .controller {
-        width: 350px;
+        width: 300px;
         display: block;
+        margin-left: 45px;
     }
 
     .controller-box {
         margin: 0 auto;
         width: 90%;
-        height: 350px;
+        height: 270px;
         border-radius: 22px;
     }
 
@@ -257,6 +261,6 @@ footer {
 
     footer {
         position: relative;
-        top: 380px;
+        top: 250px;
     }
 }
