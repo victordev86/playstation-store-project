@@ -13,54 +13,69 @@
 </head>
 
 <body>
-    <div class="gradient">
-        <div class="white-box">
-            <header>
-                <img src="./img/logo.png" alt="logo-playstation" class="logo">
-                
-                <img src="./img/menu.png" class="menu-icon">
+    <div class="white-box">
+        <header>
+            <img src="./img/logo.png" alt="logo-playstation" class="logo">
 
-                <nav class="menu">
-                    <a class="link">Consoles</a>
-                    <a class="link">Acessórios</a>
-                    <a class="link">Controles</a>
-                    <a class="link">Outros</a>
-                </nav>
-            </header>
+            <nav>
+                <ul id="menu">
+                    <li><a class="link">Consoles</a></li>
+                    <li><a class="link">Acessórios</a></li>
+                    <li><a class="link">Controles</a></li>
+                    <li><a class="link">Outros</a></li>
+                </ul>
+            </nav>
 
-            <main>
-                <div class="text-column"></div>
-                
-                <section class="left-section">
-                    <h1>PS5 Dualshock</h1>
+            <img src="./img/menu.png" class="menu-icon" onclick="showMenu()">
 
-                    <h2>Wireless Controller for Playstation</h2>
+        </header>
 
-                    <h3>Controle Original</h3>
+        <main>
+            <section class="left-section">
+                <h1>PS5 Dualshock</h1>
 
-                    <h4>R$ 222,50</h4>
+                <h2>Wireless Controller for Playstation</h2>
 
-                    <button class="comprar-button">Comprar Agora</button>
-                </section>
+                <h3>Controle Original</h3>
 
-                <section class="right-section">
-                    <img src="./img/controller.png" alt="controller-ps5" class="controller">
+                <h4>R$ 222,50</h4>
 
-                    <div class="controller-box"></div>
+                <button class="comprar-button">Comprar Agora  <img src="./img/arrow.png" alt="seta"></button>
+            </section>
 
-                    <button class="add-button"><img src="./img/add.png" class="img-add" alt="add-img"></button>
-                </section>
-            </main>
+            <section class="right-section">
+                <img src="./img/controller.png" alt="controller-ps5" class="controller">
 
-            <footer>
-                <img src="./img/fb.png"  class="fb-logo" alt="facebook-logo">
+                <div class="controller-box"></div>
 
-                <img src="./img/ig.png" class="ig-logo" alt="instagram-logo">
+                <button class="add-cart">
+                    <img src="./img/add.png" class="img-add" alt="add-img">
+                </button>
+            </section>
+        </main>
 
-                <img src="./img/tw.png" class="tw-logo" alt="twitter-logo">
-            </footer>
-        </div>
+        <footer>
+            <img src="./img/fb.png" class="fb-logo" alt="facebook-logo">
+
+            <img src="./img/ig.png" class="ig-logo" alt="instagram-logo">
+
+            <img src="./img/tw.png" class="tw-logo" alt="twitter-logo">
+        </footer>
     </div>
 </body>
+
+<script>
+    const menuList = document.getElementById("menu")
+    menuList.style.maxHeight = "0px"
+
+    function showMenu() {
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "120px"
+        } else {
+            menuList.style.maxHeight = "0px"
+        }
+    }
+</script>
+
 
 </html>
