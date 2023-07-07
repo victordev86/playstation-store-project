@@ -19,6 +19,7 @@ body {
 
 .white-box {
     width: 80%;
+    height: 90%;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     background-color: white;
@@ -66,7 +67,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 85px 0;
+    margin: 50px 0 40px;
 }
 
 .left-section {
@@ -146,7 +147,7 @@ h4 {
 }
 
 .controller {
-    width: 90%;
+    width: 70%;
     z-index: 2;
     animation: moveController 2s infinite alternate ease-in-out;
 }
